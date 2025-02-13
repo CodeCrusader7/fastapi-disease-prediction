@@ -17,7 +17,7 @@ label_encoder_path = os.path.join(BASE_DIR, "label_encoders.pkl")
 model = joblib.load(MODEL_PATH)
 label_encoders = joblib.load(label_encoder_path)
 
-label_encoders = joblib.load(r"C:\Users\lenovo\Documents\FastAPI_Project\label_encoders.pkl")
+
 
 @app.post("/predict/")
 async def predict(data: dict):

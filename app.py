@@ -11,9 +11,11 @@ BASE_DIR = os.path.dirname(__file__)
 
 # Define the model path
 MODEL_PATH = os.path.join(BASE_DIR, "disease_prediction_model.pkl")
+label_encoder_path = os.path.join(BASE_DIR, "label_encoders.pkl")
 
 # Load the model
 model = joblib.load(MODEL_PATH)
+label_encoders = joblib.load(label_encoder_path)
 
 label_encoders = joblib.load(r"C:\Users\lenovo\Documents\FastAPI_Project\label_encoders.pkl")
 
